@@ -382,7 +382,7 @@ export default function Home() {
               </div>
 
               <div className="space-y-2 mb-6">
-                {recentUsers.map((user: any, index) => (
+                {recentUsers.map((user: any, index: number) => (
                   <button
                     key={index}
                     onClick={() => handleDemoLogin(user.email, user.name, [])}
